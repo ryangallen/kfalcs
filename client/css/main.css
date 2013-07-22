@@ -1,0 +1,250 @@
+*{
+	box-style:border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+html, body, footer{
+	background: #111111;
+	color: #ffffff;
+}
+
+body a{
+	color: #f3940e;
+	text-decoration: none;
+}
+
+header, footer, #main-content{}
+
+.container{
+	max-width: 1024px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 7px;
+	overflow-y: scroll;
+}
+
+.well{
+	border: 1px solid #000000;
+	background: #FFFFFF;
+	margin: .8em 0 .5em;
+	padding: 0 .5em;
+}
+
+header{
+	padding: 7px 0 6px;
+}
+
+header h1>a{
+	color: #FFFFFF;
+}
+
+header nav{
+	position: absolute;
+	top: 21px;
+	right: 8px;
+}
+
+header nav>ul{
+	list-style: none;
+}
+
+header nav>ul>li{
+	display: inline-block;
+	margin-right: 6px;
+}
+
+#main-content{
+	background: #FAF8ED;
+	color: #222222;
+	padding: 10px 0;
+}
+
+#main-content h2{
+	margin: .3em 0 .6em;
+}
+
+#main-content h3{
+	margin: .7em 0 .3em;
+}
+
+#main-content p{
+	margin: .8em 0;
+	line-height: 1.55em;
+	text-indent: 2.2em
+}
+
+footer{
+	padding: 10px 0;
+}
+
+.footer-left{
+	float: left;
+}
+
+.footer-right{
+	float: right;
+}
+
+footer, footer a{
+	color: #444;
+}
+
+header img, footer img{
+	height: 70px;
+	vertical-align: middle
+}
+
+#next-game{
+	padding: 0;
+	margin: .5em 0 1.2em;
+	position: relative;
+}
+
+#next-game h3.table-section{
+	width: 60px;
+	text-align: center;
+	margin: 0;
+	padding: 13px 15px 17px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom:0;
+}
+
+#game-info{
+	padding: 8px 15px 10px;
+	width: calc(100% - 120px);
+	margin-left: 90px;
+}
+
+#game-info>h2{
+	margin: 0;
+}
+
+#game-info>h3{
+	margin: 0;
+}
+
+#home-gallery img{
+	width: 100%;
+	border: solid 1px #000000;
+}
+
+#standings-frame{
+   width:775px;
+   height:287px;
+   margin: 0 auto .8em;
+   border: 1px solid #888888;
+   border-top: 1px solid #999999;
+   background: #dddddd;
+   overflow:hidden;
+   position:relative;
+}
+
+#standings-iframe
+{
+   position:absolute;
+   top:-545px;
+   left:-200px;
+   width:975px;
+   height:832px;
+}
+
+#rosterSelect{
+	float: right;
+}
+
+table{
+	border-collapse: collapse;
+	background:#ffffff;
+	border:solid 1px #111111;
+	max-width:700px;
+	width: 100%;
+	margin: 1em auto;
+}
+
+.table-section{
+	background:#222222;
+	color: #FFFFFF;
+}
+
+table th, table td{
+	border:solid 1px #282828;
+	text-align:left;
+	padding:5px;
+}
+
+table th{
+	background: #f3940e;
+	border:solid 1px #000;
+}
+
+.away{
+	background:#f3940e;
+}
+
+#main-content .signed{
+	text-indent: 50%;
+}
+
+#main-content .signed-long{
+	text-indent: 25%;
+}
+
+@media (max-width: 680px) {
+	header nav{
+		position: static;
+		margin: 6px 0 0 1px;
+		font-size: 1.15em;
+	}
+	
+	#next-game h3.table-section{
+		font-size: 1.15em;
+		padding: 8px 15px;
+	}
+
+	#game-info{
+		font-size: .85em;
+	}
+}
+
+@media (max-width: 480px) {
+	header h1{
+		font-size: 1.6em;
+	}
+	
+	#next-game h3.table-section{
+		font-size: 1em;
+		padding: 8px 15px;
+	}
+	
+	#game-info{
+		font-size: .65em;
+	}
+}
+
+@media (max-width: 360px) {
+	header h1{
+		font-size: 1.5em;
+	}
+
+	header nav>ul>li{
+		display: inline-block;
+		margin-right: 4px;
+	}
+
+	#main-content p{
+		font-size: .96em;
+		line-height: 1.5em;
+	}
+
+	#main-content .signed-long{
+		text-indent: 2em;
+	}
+}
