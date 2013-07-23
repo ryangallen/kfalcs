@@ -36,6 +36,10 @@ header, footer, #main-content{}
 	padding: 0 .5em;
 }
 
+.block{
+	display: inline-block;
+}
+
 header{
 	padding: 7px 0 6px;
 }
@@ -133,6 +137,7 @@ header img, footer img{
 
 #home-gallery img{
 	width: 100%;
+	width: calc(100% - 2px);
 	border: solid 1px #000000;
 }
 
